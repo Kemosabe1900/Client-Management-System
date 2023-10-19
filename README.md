@@ -10,3 +10,5 @@ Key Features:
 - Comprehensive data management for organizing and accessing client-related information
 - User-friendly platform designed to facilitate easy tracking and retrieval of client notes
 - Customizable reporting tools for generating insights and monitoring client progress
+
+Thats all.
