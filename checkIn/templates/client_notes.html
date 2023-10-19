@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Client Notes</title>
+  </head>
+  <body>
+    <h1>Notes for {{ client.name }}</h1>
+    <ul>
+      {% for note in notes %}
+      <li>{{ note.timestamp }} - {{ note.text }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

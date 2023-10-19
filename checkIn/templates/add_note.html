@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Note</title>
+  </head>
+  <body>
+    <h1>Add Note for {{ client.name }}</h1>
+    <form method="post">
+      {% csrf_token %} Clock in:
+      <input type="time" name="clock_in" required /><br /><br />
+      Clock out:
+      <input type="time" name="clock_out" required /><br /><br />
+      Note: <textarea name="text" rows="4" cols="50" required></textarea
+      ><br /><br />
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+
+    <script>
+      const submitBtn - document.getElementById("submitBtn");
+      // Prevent form submission if there is no clocked time
+
+      submitBtn.addEventListener("click", function(event) {
+        const clockIn = document.getElementById("clock_in").value;
+        const clockOut = document.getElementById("clock_out").value;
+        if (clockIn === "" || clockOut === ""){
+          event.preventDefault();
+          alert("Please fill in the Clock In and Clock Out fields.");
+        }
+      });
+    </script>
+  </body>
+</html>
